@@ -12,7 +12,8 @@
     @include('partials.header')
 
     <main>
-
+    	<!-- qui dentro il contenuto sarà variabile, quindi usero @yields come segnaposto, ogni @yield avrà il suo nome specifico  -->
+        @yield('mainContent')
     </main>
 
     <!-- includo il footer che si trova nella cartella partials  -->
