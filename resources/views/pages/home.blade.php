@@ -9,15 +9,25 @@
 
         </div>
 
-        <div class="card-wrapper">
-            @foreach($cards as $card)
-                <figure class="image-wrapper">
-                    <img src="{{$card['thumb']}}" alt="">
-                    <span class="price">{{ $card['price'] }}</span>
-                </figure>
-                <h3 class="card-par">{{ $card['series'] }}</h3>
-            @endforeach
-        </div>
+        <section class="grid-section">
+            <div class="container">
+                <!-- <button class="jumbo-button">current series</button> -->
+                <!-- componente ciclato -->
+                <div class="grid-wrapper">
+                        @foreach($cards as $card)
+                        <div class="card-wrapper">
+                            <figure class="image-wrapper">
+                                <img src="{{$card['thumb']}}" alt="">
+                                <span class="price">{{ $card['price'] }}</span>
+                            </figure>
+                            <h3 class="card-par">{{ $card['series'] }}</h3>
+                        </div>
+                        @endforeach
+                </div>
+            </div>
+            <button class="load-btn">load more</button>
+        </section>
+        
     </main>
     jumbotron <br>
     elenco delle card
