@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    
+
     $cards = [
         [
             "title" => "Action Comics #1000: The Deluxe Edition",
@@ -229,5 +229,5 @@ Route::get('/', function () {
         ],
     ];
 
-    return view('pages.home');
+    return view('pages.home')->with('cards',$cards);
 });
