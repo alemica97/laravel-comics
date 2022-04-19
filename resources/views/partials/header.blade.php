@@ -47,7 +47,7 @@
 <header>
     <div class="container">
         <figure class="main-logo">
-            <img src="asset('img/dc-logo.png')">
+            <img src="{{asset('img/dc-logo.png')}}">
         </figure>
         <nav class="navbar">
             <ul>
