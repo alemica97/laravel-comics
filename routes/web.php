@@ -452,7 +452,11 @@ Route::get('/{id}', function($id) {
             ],
         ],
     ];
+    // se il numero nell'url è più grande della lunghezza dell'array, avremo errore 404
+    abort_if(!isset($cards[$id]),404);
 
-    dd($cards[$id]);
+    $element = $cards[$id];
+    return view('pages.detailPage')->with('card',$element);
 
-});
+    // return 'titolo: '.$cards[$id]['title'];
+})->where('id','[0-9]+'); //uso un'espressione regolare per dire che si accettsno solo numeri

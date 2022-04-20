@@ -3,6 +3,7 @@
 @import 'partials/jumbo';
 @import 'partials/cards';
 @import 'partials/footer';
+@import 'partials/detail';
 
 *{
     margin: 0;
@@ -30,6 +31,11 @@ img{
 
 .container-small{
   max-width: 450px;
+}
+
+.container-medium{
+    margin: 0 auto;
+    max-width: 1000px;
 }
 
 .footer-header{
