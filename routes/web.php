@@ -230,12 +230,12 @@ Route::get('/', function () {
     ];
 
     return view('pages.home')->with('cards',$cards);
-});
+})->name('movies.index'); //mostra tutti i film comics
 
 // Rotta per la pagina about 
 Route::get('/about', function() {
     return view('pages.about');
-});
+})->name('about.index');
 
 Route::get('/{id}', function($id) {
 
@@ -459,4 +459,6 @@ Route::get('/{id}', function($id) {
     return view('pages.detailPage')->with('card',$element);
 
     // return 'titolo: '.$cards[$id]['title'];
-})->where('id','[0-9]+'); //uso un'espressione regolare per dire che si accettsno solo numeri
+})->where('id','[0-9]+')->name('movies.show');
+ //uso un'espressione regolare per dire che si accettsno solo numeri
+ //movies.show è il nome che sta ad indicare il singolo film comics

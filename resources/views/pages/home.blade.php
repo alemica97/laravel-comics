@@ -46,14 +46,15 @@ $merch_link_array = [
                 <!-- <button class="jumbo-button">current series</button> -->
                 <!-- componente ciclato -->
                 <div class="grid-wrapper">
-                        @foreach($cards as $card)
-                        <div class="card-wrapper">
+                        @foreach($cards as $index => $card)
+                        {{-- passo un parametro alla rotta che si chiama movies.show per mostrare il film specifico --}}
+                        <a href="{{ route( 'movies.show', ['id' => $index]) }}" class="card-wrapper">
                             <figure class="image-wrapper">
                                 <img src="{{$card['thumb']}}" alt="">
                                 <span class="price">{{ $card['price'] }}</span>
                             </figure>
                             <h3 class="card-par">{{ $card['series'] }}</h3>
-                        </div>
+                        </a>
                         @endforeach
                 </div>
             </div>

@@ -42,7 +42,7 @@
             "text" => "shop"
         ],
         [
-            "href" => "/about",
+            "href" => route('about.index'), //passo all'url il nome della rotta
             "text" => "about"
         ],
     ];
@@ -51,7 +51,10 @@
 <header>
     <div class="container">
         <figure class="main-logo">
-            <img src="{{asset('img/dc-logo.png')}}">
+            {{-- così cliccando sul logo principale, ritorno alla pagina con tutti i film --}}
+            <a href="{{ route('movies.index') }}"> 
+                <img src="{{asset('img/dc-logo.png')}}">
+            </a>
         </figure>
         <nav class="navbar">
             <ul>
