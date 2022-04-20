@@ -41,6 +41,10 @@
             "href" => "#",
             "text" => "shop"
         ],
+        [
+            "href" => "/about",
+            "text" => "about"
+        ],
     ];
 @endphp
 

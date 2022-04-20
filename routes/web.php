@@ -231,3 +231,7 @@ Route::get('/', function () {
 
     return view('pages.home')->with('cards',$cards);
 });
+
+Route::get('/about', function() {
+    return view('pages.about');
+});
