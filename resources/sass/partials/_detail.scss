@@ -24,6 +24,7 @@
   .container-medium.description{
       padding: 50px 0;
       display: flex;
+      align-items: center;
 
       .movie-info{
           flex-basis: 60%;
@@ -81,5 +82,57 @@
           & span{
               align-self: flex-end;
           }
+      }
+  }
+
+.talent-specs-section{
+    background-color: #F6F6F6;
+    border-top: 1px solid rgb(230, 230, 230);
+    padding: 5px 0 80px 0;
+}
+
+.container-medium.detail-talent{
+      padding: 20px 0;
+      display: flex;
+
+      .talent, .specs{
+          flex-basis: 50%;
+          padding-right: 30px;
+
+          h3{
+              font-size: 20px;
+              color: #003F5E;
+              padding: 15px 0;
+              border-bottom: 1px solid rgb(230, 230, 230);
+          }
+      }
+
+      .detailed-info{
+          display: flex;
+          padding: 10px 0;
+          border-bottom: 1px solid rgb(230, 230, 230);
+
+          .col-4{
+              flex-basis: 33%;
+              color: #003F5E;
+          }
+          
+          .col-8{
+              flex-basis: 66%;
+              color: #1DB0DE;
+          }
+      }
+  }
+
+  .logos-section{
+    background-color: #F6F6F6;
+    border-top: 1px solid rgb(230, 230, 230);
+  }
+
+  .container-medium.logos{
+      display: flex;
+
+      .col-3{
+          flex-basis: calc(100% / 4);
       }
   }
