@@ -31,3 +31,47 @@ img{
 .container-small{
   max-width: 450px;
 }
+
+.footer-header{
+    background-color: #0282F9;
+    padding: 50px 20px;
+
+    & .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
+
+        & > ul{
+            display: contents;
+        }
+    } 
+}
+
+.merch-link figure{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.merch-link{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+
+    & a{
+        text-transform: uppercase;
+        color: white;
+        font-size: 14px;
+        font-weight: 700;
+        white-space: nowrap;
+
+        &:hover{
+            transform: scale(1.05, 1.05);
+        }
+    }
+}
