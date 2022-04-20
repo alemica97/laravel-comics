@@ -156,6 +156,103 @@
   font-size: 15px;
 }
 
+.list-title {
+  font-size: 15px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.list-item {
+  font-size: 12px;
+  margin-bottom: 10px;
+  color: white;
+  opacity: 0.6;
+}
+
+.list-item:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.container-small {
+  padding: 40px 0px 60px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+}
+
+.container-small ul {
+  display: inline-block;
+}
+
+.footer-link {
+  background-image: url(/img/dc-logo-bg.png), url(/img/footer-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: calc(30px + 40vw), cover;
+  background-position: 80% center, center;
+}
+
+.footer-social {
+  height: 110px;
+  background-color: #303030;
+  color: white;
+}
+
+.footer-social ul {
+  display: contents;
+}
+
+.footer-social .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100%;
+  padding: 0 10px;
+}
+
+.social-section {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-grow: 1;
+  gap: 15px;
+}
+
+.sign-up {
+  color: white;
+  border: 2px solid #0282F9;
+  padding: 15px;
+}
+
+.sign-up:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #0282F9;
+  transition: all 500ms;
+}
+
+.follow {
+  color: #0282F9;
+  border: none;
+}
+
+.sign-up,
+.follow {
+  text-transform: uppercase;
+  background-color: transparent;
+  font-size: 18px;
+  font-weight: 550;
+}
+
+.social-icon:hover {
+  transform: scale(1.05, 1.05);
+}
+
 * {
   margin: 0;
   padding: 0;
