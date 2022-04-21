@@ -2,46 +2,57 @@
 @php 
     $links = [
         [
-            "href" => "#",
+            "name" => 'characters.index',
+            "href" => "characters/",
             "text" => "characters"
         ],
         [
-            "href" => "#",
+            "name" => 'comics.index',
+            "href" => "comics/",
             "text" => "comics"
         ],
         [
-            "href" => "#",
+            "name" => 'movies.index',
+            "href" => "movies/",
             "text" => "movies"
         ],
         [
-            "href" => "#",
+            "name" => 'tv.index',
+            "href" => "tv/",
             "text" => "tv"
         ],
         [
-            "href" => "#",
+            "name" => 'games.index',
+            "href" => "games/",
             "text" => "games"
         ],
         [
-            "href" => "#",
+            "name" => 'collectibles.index',
+            "href" => "collectibles/",
             "text" => "collectibles"
         ],
         [
-            "href" => "#",
+            "name" => 'videos.index',
+            "href" => "videos/",
             "text" => "videos"
         ],
         [
-            "href" => "#",
+            "name" => 'fans.index',
+            "href" => "fans/",
             "text" => "fans"
         ],
         [
-            "href" => "#",
+            "name" => 'news.index',
+            "href" => "news/",
             "text" => "news"
         ],
         [
-            "href" => "#",
+            "name" => 'shop.index',
+            "href" => "shop/",
             "text" => "shop"
         ],
         [
+            "name" => 'about.index',
             "href" => route('about.index'), //passo all'url il nome della rotta
             "text" => "about"
         ],
@@ -57,9 +68,10 @@
             </a>
         </figure>
         <nav class="navbar">
+            @dump( Request::route()->getName() )
             <ul>
                 @foreach($links as $link)
-                    <li>
+                    <li class="{{ Request::route()->getName() == $link['name'] ? 'navbar-items active' : 'navbar-items'}}">
                         <a href="{{$link['href']}}">{{$link['text']}}</a>
                     </li>
                 @endforeach
