@@ -13,7 +13,7 @@
         ],
         [
             "name" => 'movies.index',
-            "href" => "movies/",
+            "href" => route('movies.index'),
             "text" => "movies"
         ],
         [
